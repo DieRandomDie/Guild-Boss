@@ -7,14 +7,17 @@ They are separate from the React client in the parent directory.
 
 1. In your destination spreadsheet, open **Extensions > Apps Script**. Replace any code in Code.gs with the gscript.js.
 <img width="759" height="484" alt="image" src="https://github.com/user-attachments/assets/2d064d60-f9f5-4120-b3aa-846afab81d40" />
-3. Run **initialSetup** once and authorize spreadsheet access. It saves the spreadsheet ID and creates an empty `Data` sheet if needed. Existing row 1 must contain exactly one each of `Remaining`, `Minutes`, and `Seconds` (case-sensitive, any order).
+
+2. Run **initialSetup** once and authorize spreadsheet access. It saves the spreadsheet ID and creates an empty `Data` sheet if needed. Existing row 1 must contain exactly one each of `Remaining`, `Minutes`, and `Seconds` (case-sensitive, any order).
 <img width="1175" height="432" alt="image" src="https://github.com/user-attachments/assets/7449e03f-98e3-4747-abdf-401de1f48a38" />
-4. Choose **Deploy > Manage deployments**, edit the web-app deployment, select **New version**, and deploy. Use **Execute as: Me**, with access **Anyone** so Tampermonkey can submit without a Google sign-in page. If your account prevents anonymous web apps, this setup needs a different authenticated transport. This access setting allows anyone who has the endpoint URL to submit values.
-5. Copy the web app's **/exec** URL into `URL` in `gboss.user.js` if it differs from the existing URL. Saving Apps Script source alone does not update a versioned deployment. **FIRST TIME SETUP REPLACE THE TEXT "REPLACE ME"**
-6. 
-7. Replace the entire old **gboss** Tampermonkey script, including its metadata, with `gboss.user.js`. Save, enable it, accept its connection permissions if prompted, and reload the game. Disable any duplicate old gboss script.
-8. 
-9. Open/fight the guild Dragon normally. In the browser developer console, look for `[gboss] Updated Google Sheets:` and confirm row 2 changes in `Data`. Failures appear with `[gboss]` and an error message.
+
+3. Choose **Deploy > Manage deployments**, edit the web-app deployment, select **New version**, and deploy. Use **Execute as: Me**, with access **Anyone** so Tampermonkey can submit without a Google sign-in page. If your account prevents anonymous web apps, this setup needs a different authenticated transport. This access setting allows anyone who has the endpoint URL to submit values.
+
+4. Copy the web app's **/exec** URL into `URL` in `gboss.user.js` if it differs from the existing URL. Saving Apps Script source alone does not update a versioned deployment. **FIRST TIME SETUP REPLACE THE TEXT "REPLACE ME"**
+
+5. Replace the entire old **gboss** Tampermonkey script, including its metadata, with `gboss.user.js`. Save, enable it, accept its connection permissions if prompted, and reload the game. Disable any duplicate old gboss script.
+
+6. Open/fight the guild Dragon normally. In the browser developer console, look for `[gboss] Updated Google Sheets:` and confirm row 2 changes in `Data`. Failures appear with `[gboss]` and an error message.
 
 Version 2.4.0 runs without a panel, buttons, or diagnostic menu commands. Startup, successful uploads, and errors are logged to the browser console with the `[gboss]` prefix. Successful uploads include request duration in milliseconds. It starts at `document-start` with `@sandbox DOM` and does not wait for page readiness events.
 
