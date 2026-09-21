@@ -77,7 +77,7 @@
     }
     let live = null, lastRead = 0, visibleBoss = false;
     let root, host, metrics, statusLabel, notice, panel, toggle, rollInput, channelInput, compactButton;
-    const fmt = (n) => n === null || !Number.isFinite(n) ? "\u2014" : n.toLocaleString("en-US", { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    const fmt = (n) => n === null || !Number.isFinite(n) ? "\u2014" : n.toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 3 });
     const rawHP = (s) => s ? BigInt(s.hp).toLocaleString("en-US") : "\u2014";
     function save() {
       try {
