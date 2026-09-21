@@ -1,1 +1,1 @@
-nya
+throw in tampermonkey and enjoy
