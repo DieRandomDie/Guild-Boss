@@ -8,7 +8,7 @@ They are separate from the React client in the parent directory.
 1. In your destination spreadsheet, open **Extensions > Apps Script**. Replace the old server code with `Code.gs`.
 2. Run **initialSetup** once and authorize spreadsheet access. It saves the spreadsheet ID and creates an empty `Data` sheet if needed. Existing row 1 must contain exactly one each of `Remaining`, `Minutes`, and `Seconds` (case-sensitive, any order).
 3. Choose **Deploy > Manage deployments**, edit the web-app deployment, select **New version**, and deploy. Use **Execute as: Me**, with access **Anyone** so Tampermonkey can submit without a Google sign-in page. If your account prevents anonymous web apps, this setup needs a different authenticated transport. This access setting allows anyone who has the endpoint URL to submit values.
-4. Copy the web app's **/exec** URL into `URL` in `gboss.user.js` if it differs from the existing URL. Saving Apps Script source alone does not update a versioned deployment.
+4. Copy the web app's **/exec** URL into `URL` in `gboss.user.js` if it differs from the existing URL. Saving Apps Script source alone does not update a versioned deployment. **FIRST TIME SETUP REPLACE THE TEXT "REPLACE ME"**
 5. Replace the entire old **gboss** Tampermonkey script, including its metadata, with `gboss.user.js`. Save, enable it, accept its connection permissions if prompted, and reload the game. Disable any duplicate old gboss script.
 6. Open/fight the guild Dragon normally. In the browser developer console, look for `[gboss] Updated Google Sheets:` and confirm row 2 changes in `Data`. Failures appear with `[gboss]` and an error message.
 
