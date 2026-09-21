@@ -12,6 +12,10 @@ They are separate from the React client in the parent directory.
 <img width="1175" height="432" alt="image" src="https://github.com/user-attachments/assets/7449e03f-98e3-4747-abdf-401de1f48a38" />
 
 3. Choose **Deploy > Manage deployments**, edit the web-app deployment, select **New version**, and deploy. Use **Execute as: Me**, with access **Anyone** so Tampermonkey can submit without a Google sign-in page. If your account prevents anonymous web apps, this setup needs a different authenticated transport. This access setting allows anyone who has the endpoint URL to submit values.
+<img width="323" height="265" alt="image" src="https://github.com/user-attachments/assets/88ab822e-c13b-40ce-9a60-7aa13c5cb8ff" />
+<img width="784" height="633" alt="image" src="https://github.com/user-attachments/assets/62ac35d5-b01c-4e41-87fb-8c316b6a354b" />
+<img width="783" height="645" alt="image" src="https://github.com/user-attachments/assets/eb49af94-6238-4ebe-9a97-2a63ed97d40b" />
+
 
 4. Copy the web app's **/exec** URL into `URL` in `gboss.user.js` if it differs from the existing URL. Saving Apps Script source alone does not update a versioned deployment. **FIRST TIME SETUP REPLACE THE TEXT "REPLACE ME"**
 
