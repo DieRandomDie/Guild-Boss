@@ -16,8 +16,9 @@ They are separate from the React client in the parent directory.
 <img width="784" height="633" alt="image" src="https://github.com/user-attachments/assets/62ac35d5-b01c-4e41-87fb-8c316b6a354b" />
 <img width="783" height="645" alt="image" src="https://github.com/user-attachments/assets/eb49af94-6238-4ebe-9a97-2a63ed97d40b" />
 
+4. Copy the web app's **/exec** URL into `URL` in `gboss.user.js` if it differs from the existing URL. Saving Apps Script source alone does not update a versioned deployment. **FIRST TIME SETUP REPLACE THE TEXT "REPLACE ME" with this exec link.**
+<img width="556" height="144" alt="image" src="https://github.com/user-attachments/assets/09b7f7a4-e3f3-4417-bc94-24b1629ea42e" />
 
-4. Copy the web app's **/exec** URL into `URL` in `gboss.user.js` if it differs from the existing URL. Saving Apps Script source alone does not update a versioned deployment. **FIRST TIME SETUP REPLACE THE TEXT "REPLACE ME"**
 
 5. Replace the entire old **gboss** Tampermonkey script, including its metadata, with `gboss.user.js`. Save, enable it, accept its connection permissions if prompted, and reload the game. Disable any duplicate old gboss script.
 
