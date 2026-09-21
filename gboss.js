@@ -2,7 +2,7 @@
 // @name         gboss Local Calculator
 // @namespace    http://tampermonkey.net/
 // @version      3.10.0
-// @description  Standalone guild boss calculator, rollcalls and pacing. No Google required.
+// @description  Standalone guild boss calculator, rollcalls and pacing.
 // @match        https://lyrania.co.uk/game.php*
 // @match        https://dev.lyrania.co.uk/game.php*
 // @run-at       document-start
