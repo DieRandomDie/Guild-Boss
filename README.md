@@ -1,8 +1,3 @@
-# Guild boss reporter
-
-These two files replace the supplied gboss userscript and Google Apps Script.
-They are separate from the React client in the parent directory.
-
 ## Install
 
 1. In your destination spreadsheet, open **Extensions > Apps Script**. Replace any code in Code.gs with the [gscript.js](https://github.com/DieRandomDie/lyraniaGbossGsheet/blob/main/gscript.js).
